@@ -1,8 +1,8 @@
 """
 FizzBuzz problem:
 
-For each of the numbers 1 to 100:
-- if the number is dividible by 3, print "fizz"
+For each of the whole numbers 1 to 100:
+- if the number is divisible by 3, print "fizz"
 - if the number is divisible by 5, print "buzz"
 - if the number is divisible by 15, print "fizzbuzz"
 - otherwise, just print the number
@@ -25,13 +25,8 @@ def fizz_buzz_encode(x: int) -> List[int]:
         return [1, 0, 0, 0]
 
 def binary_encode(x: int) -> List[int]:
-    """10 digit binary encoding of x
-
-    Args:
-        x (int): _description_
-
-    Returns:
-        List[int]: _description_
+    """
+    10 digit binary encoding of x
     """
     return [x >> i & 1 for i in range(10)]
 
